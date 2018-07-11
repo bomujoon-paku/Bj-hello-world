@@ -1,0 +1,38 @@
+:root {
+    --main-bg-color: coral; 
+    --sub-txt-color: #1f8eda; 
+}
+div {
+  display: block;
+  position: relative;
+  text-align: center;
+}
+
+.btn {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: var(--main-bg-color);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 6px #999;
+  margin-bottom: 1em;
+}
+
+.btn:hover {
+  /*background-color: #3e8e41;*/
+  opacity: 0.8;
+}
+
+.btn:active {
+  /*background-color: #3e8e41;*/
+  box-shadow: none;
+  transform: translateY(6px);
+}
+
+.push_btn {
+  color: var(--sub-txt-color);
+}

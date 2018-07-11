@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>タイトル</title>
+<meta name="viewport" content="width=device-width">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<style type="text/css">
+/* :root {
+    --main-txt-color: #006bb9;
+    --main-seikai-color: #e5842e;
+    --main-border-radius: 4px;
+} */
+
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.wrapper_pc_sp{
+    margin: 0 auto;
+    max-width: 750px;
+}
+
+@media screen and (min-width: 481px) {
+  .hukidashi_n_l, .hukidashi_n_r {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+  .faceicon-main_l, .faceicon-main_r {
+      display: table;
+      float: left;
+  }
+
+}
+
+article img, img {
+    max-width: 100%;
+    display: block;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+}
+
+/*************************/
+.hukidashi_a_left,
+.hukidashi_b_left,
+.hukidashi_c_left,
+.hukidashi_a_right,
+.hukidashi_b_right,
+.hukidashi_c_right {
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    margin-left: 25px;
+    height: fit-content;
+    background: repeating-linear-gradient(-45deg, #ffbdbd, #ffbdbd 10px, #ffcccc 0, #ffcccc 20px);
+    background: -moz-repeating-linear-gradient(-45deg, #ffbdbd, #ffbdbd 10px, #ffcccc 0, #ffcccc 20px);
+    background: -webkit-repeating-linear-gradient(-45deg, #ffbdbd, #ffbdbd 10px, #ffcccc 0, #ffcccc 20px);
+    background: -ms-repeating-linear-gradient(-45deg, #ffbdbd, #ffbdbd 10px, #ffcccc 0, #ffcccc 20px);
+    background-color: #ffffff;
+    z-index: -2;
+}
+
+.hukidashi_a_right,
+.hukidashi_b_right,
+.hukidashi_c_right {
+  margin-left: 0;
+  margin-right: 25px;
+}
+
+.hukidashi_b_left, .hukidashi_b_right {
+    background: repeating-linear-gradient(-45deg, #ffce9b, #ffce9b 10px, #ffd9b2 0, #ffd9b2 20px);
+    background: -moz-repeating-linear-gradient(-45deg, #ffce9b, #ffce9b 10px, #ffd9b2 0, #ffd9b2 20px);
+    background: -webkit-repeating-linear-gradient(-45deg, #ffce9b, #ffce9b 10px, #ffd9b2 0, #ffd9b2 20px);
+    background: -ms-repeating-linear-gradient(-45deg, #ffce9b, #ffce9b 10px, #ffd9b2 0, #ffd9b2 20px);
+}
+
+.hukidashi_c_left, .hukidashi_c_right {
+    background: repeating-linear-gradient(-45deg, #d1bdff, #d1bdff 10px, #dcccff 0, #dcccff 20px);
+    background: -moz-repeating-linear-gradient(-45deg, #d1bdff, #d1bdff 10px, #dcccff 0, #dcccff 20px);
+    background: -webkit-repeating-linear-gradient(-45deg, #d1bdff, #d1bdff 10px, #dcccff 0, #dcccff 20px);
+    background: -ms-repeating-linear-gradient(-45deg, #d1bdff, #d1bdff 10px, #dcccff 0, #dcccff 20px);
+}
+
+.hukidashi_a_left:before,
+.hukidashi_b_left:before,
+.hukidashi_c_left:before,
+.hukidashi_a_right:before,
+.hukidashi_b_right:before,
+.hukidashi_c_right:before {
+    background-color: #ffffff;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 10px;
+    z-index: -1;
+}
+
+.hukidashi_a_left:after,
+.hukidashi_b_left:after,
+.hukidashi_c_left:after,
+.hukidashi_a_right:after,
+.hukidashi_b_right:after,
+.hukidashi_c_right:after {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: -15px;
+    /* right: 160px; */
+    width: 0px;
+    height: 0px;
+    margin: auto;
+    border-style: solid;
+    border-color: transparent #ffcccc transparent transparent;
+    border-width: 10px 15px 10px 0px;
+}
+
+.hukidashi_b_left:after {
+    border-color: transparent #ffd9b2 transparent transparent;
+}
+
+.hukidashi_c_left:after {
+    border-color: transparent #dcccff transparent transparent;
+}
+
+.hukidashi_a_right:after,
+.hukidashi_b_right:after,
+.hukidashi_c_right:after {
+    top: 50px;
+    left: inherit;
+    right: -15px;
+    border-color: transparent transparent transparent #ffcccc;
+    border-width: 10px 0px 10px 15px;
+}
+
+.hukidashi_b_right:after {
+    border-color: transparent transparent transparent #ffd9b2;
+}
+
+.hukidashi_c_right:after {
+    border-color: transparent transparent transparent #dcccff;
+}
+/*************************/
+
+.hukidashi_a_left p,
+.hukidashi_b_left p,
+.hukidashi_c_left p,
+.hukidashi_a_right p,
+.hukidashi_b_right p,
+.hukidashi_c_right p {
+  margin: 10px;
+}
+
+.huki p {
+  margin: 10px;
+}
+.saraya_face_img_outter {
+    /* display: block; */
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.saraya_face_img_inner.circle_a img,
+.saraya_face_img_inner.circle_b img,
+.saraya_face_img_inner.circle_c img{
+    position: relative;
+    max-width: 120px;
+    height: auto;
+    object-fit: contain;
+    margin: 0;
+    border: solid 4px #ffcccc;
+    border-radius: 50%;
+}
+
+.saraya_face_img_inner.circle_b img{
+    border: solid 4px #ffd9b2;
+}
+.saraya_face_img_inner.circle_c img{
+    border: solid 4px #dcccff;
+}
+
+.name_a_sang,
+.name_b_sang,
+.name_c_sang {
+  font-family: TsukuBRdGothicStd-B, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin: 4.5px auto;
+  color: #ff8080; /* A子さん */
+}
+
+.name_b_sang {
+  color: #ff9933; /* B江さん */
+}
+
+.name_c_sang {
+  color: #aa80ff; /* C美さん */
+}
+
+
+/*基本の吹き出し*/
+.huki_sankaku{
+  position: relative;
+  display: block;
+  /* background: #fde7d1; */
+  border: #fde7d1 solid 10px;
+  padding: 5px;
+  height: fit-content;
+}
+.huki_sankaku:after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+    margin: auto;
+    border-style: solid;
+    border-color: transparent transparent transparent #ffcccc;
+    border-width: 10px 0px 10px 15px;
+    background: repeating-linear-gradient(-45deg, #ffbdbd, #ffbdbd 5px, #ffcccc 0, #ffcccc 10px);
+}
+</style>
+  
+</head>
+<body>
+<div class="wrapper_pc_sp">
+
+<!-- 顔が左側 -->
+<h2>顔が左側</h2>
+<div class="saraya_face_img_outter">
+  <div class="saraya_face_img_inner circle_a">
+    <div>
+      <img src="https://blackboard60s.com/wp/wp-content/uploads/2018/05/saraya_a-sang.png">
+      <p class="name_a_sang">A子さん</p>
+    </div>
+  </div>
+  <div class="hukidashi_a_left">
+    <p>基礎知識を学ぶ前に、まずは、どれぐらい知っているかのレベルチェックをしてみるのはどうでしょう？</p>
+    <p>ということで、<span class="say-box_strong_blue">できるビジネスパーソンなら知っているであろう、政治・経済の知識レベルをチェックするクイズ</span>を用意したので、ぜひトライしてみてください！小林さんにももちろんやってもらいますよ！</p>  
+  </div>
+</div>
+<br>
+<br>
+<div class="saraya_face_img_outter">
+  <div class="saraya_face_img_inner circle_b">
+    <div>
+      <img src="https://blackboard60s.com/wp/wp-content/uploads/2018/05/saraya_b-sang.png">
+      <p class="name_b_sang">B江さん</p>
+    </div>
+  </div>
+  <div class="hukidashi_b_left">
+    <p>基礎知識を学ぶ前に、まずは、どれぐらい知っているかのレベルチェックをしてみるのはどうでしょう？</p>
+    <p>ということで、<span class="say-box_strong_blue">できるビジネスパーソンなら知っているであろう、政治・経済の知識レベルをチェックするクイズ</span>を用意したので、ぜひトライしてみてください！小林さんにももちろんやってもらいますよ！</p>  
+  </div>
+</div>
+<br>
+<br>
+<div class="saraya_face_img_outter">
+  <div class="saraya_face_img_inner circle_c">
+    <div>
+      <img src="https://blackboard60s.com/wp/wp-content/uploads/2018/05/saraya_c-sang.png">
+      <p class="name_c_sang">C美さん</p>
+    </div>
+  </div>
+  <div class="hukidashi_c_left">
+    <p>基礎知識を学ぶ前に、まずは、どれぐらい知っているかのレベルチェックをしてみるのはどうでしょう？</p>
+    <p>ということで、<span class="say-box_strong_blue">できるビジネスパーソンなら知っているであろう、政治・経済の知識レベルをチェックするクイズ</span>を用意したので、ぜひトライしてみてください！小林さんにももちろんやってもらいますよ！</p>  
+  </div>
+</div>
+<br>
+<br>
+
+<!-- 顔が右側 -->
+<h2>顔が右側</h2>
+<div class="saraya_face_img_outter">
+  <div class="hukidashi_a_right">
+    <p>基礎知識を学ぶ前に、まずは、どれぐらい知っているかのレベルチェックをしてみるのはどうでしょう？</p>
+    <p>ということで、<span class="say-box_strong_blue">できるビジネスパーソンなら知っているであろう、政治・経済の知識レベルをチェックするクイズ</span>を用意したので、ぜひトライしてみてください！小林さんにももちろんやってもらいますよ！</p>  
+  </div>
+  <div class="saraya_face_img_inner circle_a">
+    <div>
+      <img src="https://blackboard60s.com/wp/wp-content/uploads/2018/05/saraya_a-sang.png">
+      <p class="name_a_sang">A子さん</p>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<div class="saraya_face_img_outter">
+  <div class="hukidashi_b_right">
+    <p>基礎知識を学ぶ前に、まずは、どれぐらい知っているかのレベルチェックをしてみるのはどうでしょう？</p>
+    <p>ということで、<span class="say-box_strong_blue">できるビジネスパーソンなら知っているであろう、政治・経済の知識レベルをチェックするクイズ</span>を用意したので、ぜひトライしてみてください！小林さんにももちろんやってもらいますよ！</p>  
+  </div>
+  <div class="saraya_face_img_inner circle_b">
+    <div>
+      <img src="https://blackboard60s.com/wp/wp-content/uploads/2018/05/saraya_b-sang.png">
+      <p class="name_b_sang">B江さん</p>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<div class="saraya_face_img_outter">
+  <div class="hukidashi_c_right">
+    <p>基礎知識を学ぶ前に、まずは、どれぐらい知っているかのレベルチェックをしてみるのはどうでしょう？</p>
+    <p>ということで、<span class="say-box_strong_blue">できるビジネスパーソンなら知っているであろう、政治・経済の知識レベルをチェックするクイズ</span>を用意したので、ぜひトライしてみてください！小林さんにももちろんやってもらいますよ！</p>  
+  </div>
+  <div class="saraya_face_img_inner circle_c">
+    <div>
+      <img src="https://blackboard60s.com/wp/wp-content/uploads/2018/05/saraya_c-sang.png">
+      <p class="name_c_sang">C美さん</p>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+
+
+
+</div>
+</body>
+</html>
